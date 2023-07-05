@@ -1,6 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import Login from "./components/Login";
-import Profile from "./components/Profile";
+import { Profile } from "./components/Profile";
 import { Fragment } from "react";
 import Logout from "./components/Logout";
 
@@ -19,7 +19,6 @@ function App() {
         ) : (<Login />)
       }
     </div>
-
   );
 }
 

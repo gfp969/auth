@@ -4,12 +4,12 @@ const Login = () => {
 
     const { loginWithRedirect } = useAuth0();
 
-    function handleLogin(){
+    function handleLogin() {
         loginWithRedirect();
     }
 
     return (
-        <button onClick={handleLogin()}> Login </button>
+        <button onClick={() => (handleLogin())}> Login </button>
     )
 }
 
